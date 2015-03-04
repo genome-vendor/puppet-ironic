@@ -191,7 +191,7 @@ class ironic (
       $database_backend_package = 'python-psycopg2'
     }
     /sqlite:\/\//: {
-      $database_backend_package = 'python-pysqlite2'
+      $database_backend_package = 'python-sqlite2'
     }
     default: {
       fail("Invalid database connection: ${database_connection}")
